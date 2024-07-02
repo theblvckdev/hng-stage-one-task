@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Tech Goals</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- hero -->
+    <section class="hero">
+      <div class="container h-full">
+        <div class="hero-text h-screen flex justify-center flex-col w-full">
+          <div class="text-sm">
+            <span>Time:</span>
+            <span data-testid="currentTimeUTC"></span>. <span>Day:</span>
+            <span data-testid="currentDay"></span>
+          </div>
+          <h3 class="text-dark flex" style="margin-top: 10px">
+            Hello 👋, I'm
+            <span data-testid="slackDisplayName" style="margin-left: 5px"
+              >Nathaniel Joseph</span
+            >
+          </h3>
+          <h1 class="text-dark text-6xl mt-3">
+            Full-stack Developer based in Nigeria.
+          </h1>
+
+          <div>
+            <div class="mt-3 flex items-center gap-2">
+              <a
+                href="#about"
+                class="outline-none btn btn-primary no-underline"
+              >
+                About me
+              </a>
+
+              <a
+                href="#my-goals"
+                class="outline-none btn btn-outline no-underline"
+              >
+                My goals
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="flex flex-row items-center gap-3">
+          <div class="basis-1-2">
+            <h1 class="text-dark text-6xl">About me</h1>
+            <div>
+              <p class="text-sm">
+                I am a full-stack developer with over 3 years of experience, I
+                have the necessary skills needed from a full-stack developer,
+                which includes: React.js, Next.js, Typescript, JavaScript,
+                Express.js, Node.js, MongoDB ...
+              </p>
+
+              <p class="mt-2 text-sm">
+                I am a good communicator, team player, and fast learner. I'm
+                currently participating in the
+                <a
+                  href="https://hng.tech/learn"
+                  target="_blank"
+                  data-testid="hngLink"
+                  class="text-dark outline-none font-semibold"
+                  >HNG internship</a
+                >
+                programme to boost my skill as a full-stack developer by
+                building projects both in the front-end, and back-end tracks.
+                Interested in working on projects together? Please feel free to
+                send an email to:
+                <a
+                  href="mailto: nathancodes05@gmail.com"
+                  class="text-dark outline-none font-semibold"
+                  ><span data-testid="slackEmail"
+                    >nathancodes05@gmail.com</span
+                  ></a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="basis-1-2 flex items-center justify-center">
+            <img
+              src="profile-picture.jpg"
+              alt="Slack Profile Picture"
+              data-testid="slackProfilePicture"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- goals -->
+    <section id="my-goals" class="goals">
+      <div class="container">
+        <div class="flex flex-row">
+          <div class="basis-1-2">
+            <h1 class="text-dark text-6xl">My goals</h1>
+
+            <p class="mt-3 text-sm">
+              My primary goal for the next two years is to master the MERN
+              stack, which includes MongoDB, Express.js, React, and Node.js. I
+              plan to achieve this by completing advanced courses and
+              certifications in each technology, building five complex projects
+              that incorporate all components of the stack, and contributing to
+              open-source MERN projects on GitHub. Alongside this, I aim to gain
+              proficiency in DevOps to streamline development and deployment
+              processes.
+            </p>
+          </div>
+
+          <div class="basis-1-2"></div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="flex flex-row items-center">
+          <div class="basis-1-2">
+            <p>
+              &copy; 2024.
+              <a
+                href="https://hng.tech/learn"
+                target="_blank"
+                data-testid="hngLink"
+                class="text-dark outline-none font-semibold"
+                >HNG internship</a
+              >
+              Stage-one Task (Front-end)
+            </p>
+          </div>
+
+          <div class="basis-1-2">
+            <div class="flex">
+              <ul class="flex gap-2 ml-auto" style="list-style: none">
+                <li>
+                  <a
+                    href="https://hng.tech/learn"
+                    class="text-dark text-sm outline-none"
+                    data-testid="hngLink"
+                    >HNG Learn</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://keyword.dog"
+                    class="text-dark text-sm outline-none"
+                    data-testid="keywordLink"
+                    >Keyword Dog</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://scrapeanyweb.site"
+                    class="text-dark text-sm outline-none"
+                    data-testid="scrapeanywebLink"
+                    >Scrape Any Web</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

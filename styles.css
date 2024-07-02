@@ -1,0 +1,266 @@
+/* variable */
+:root {
+  --color-dark: #222222;
+  --color-white: #ffffff;
+  --gray-color: #eeeeee6b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+  overflow-x: hidden;
+}
+
+/* global styling */
+.text-dark {
+  color: var(--color-dark);
+}
+
+.basis-1-2 {
+  flex-basis: 50%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  line-height: 100%;
+  margin: 0%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.gap-3 {
+  gap: 30px;
+}
+
+.btn {
+  border-radius: 10px;
+  padding: 10px 25px;
+  border: 1px solid skyblue;
+  text-transform: capitalize;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in;
+}
+
+.btn-primary {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  border-color: var(--color-dark);
+}
+
+.max-w-5xl {
+  max-width: 50rem;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--color-dark);
+  border-color: var(--color-dark);
+}
+
+.btn-outline:hover {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+}
+
+.outline-none {
+  outline: none;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.mt-3 {
+  margin-top: 30px;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.text-sm {
+  font-size: 15px;
+}
+
+.text-6xl {
+  font-size: 6rem;
+}
+
+.gap-2 {
+  gap: 20px;
+}
+
+.text-7xl {
+  font-size: 7rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 800;
+}
+
+.container {
+  max-width: 72rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+/* hero */
+.hero {
+  height: 100vh;
+  width: 100vw;
+}
+
+/* about */
+.about {
+  background-color: var(--gray-color);
+  padding: 5rem 0px;
+}
+
+img[data-testid="slackProfilePicture"] {
+  max-width: 100%;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* goals */
+.goals {
+  padding: 0rem 0px 5rem 0;
+  background-color: var(--gray-color);
+}
+
+footer {
+  padding: 2px 0;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .text-6xl {
+    font-size: 70px;
+  }
+
+  .container {
+    max-width: 55rem;
+  }
+
+  .btn {
+    padding: 8px 18px;
+  }
+
+  .text-sm {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-6xl {
+    font-size: 60px;
+  }
+
+  .container {
+    max-width: 40rem;
+  }
+
+  .btn {
+    padding: 8px 18px;
+  }
+
+  .flex-row {
+    flex-direction: column-reverse;
+  }
+
+  .text-sm {
+    font-size: 14px;
+  }
+
+  .ml-auto {
+    margin-left: 0%;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  li {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .text-6xl {
+    font-size: 33px;
+  }
+
+  .mt-3 {
+    margin-top: 20px;
+  }
+
+  .container {
+    max-width: 95%;
+  }
+
+  .btn {
+    padding: 8px 18px;
+  }
+
+  .flex {
+    font-size: 13px;
+  }
+
+  footer .text-sm {
+    font-size: 13px;
+  }
+
+  .ml-auto {
+    margin-left: 0% !important;
+  }
+}
